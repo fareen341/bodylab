@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>GYM FOR EVERYONE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+hr.new4 {
+  border: 1px solid black;
+}
+.mySlides {display:none}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 100px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contactus.html" class="w3-button w3-block">Contact Us</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Photos</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="aboutus.html" class="w3-button w3-block">About Us</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content" style="padding:5px 5px" id="photo">
+</br>
+  <h3 class="w3-center">PHOTOS</h3>
+  <p class="w3-center"><em>Here are some photos.</em></p><br>
+  
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="pic-6.jpg" style="width:100%">
+  <img class="mySlides" src="pic4.jpg" style="width:100%">
+  <img class="mySlides" src="pic2.jpg" style="width:100%">
+  
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+</div>
+
+</br>
+<!-- Container (Portfolio Section) -->
+ 
+<p class="w3-center"><em>Click on the images to make them bigger</em></p><br>
+	 <div class="column">
+    <img src="pic1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic-6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+  <div class="column">
+    <img src="pic-8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+	<div class="column">
+    <img src="pic-9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+</br>
+</br>
+</br>
+<h3 class="w3-center">VIDEOS</h3>
+<p class="w3-center"><em>Here are some videos.</em></p><br>
+
+<video width="400" controls>
+  <source src="gymvideo.mp4" type="video/mp4">
+  <source src="gymvideo.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-10 w3-light-grey w3-center">
+  <h4>ABOUT US</h4>
+  <p>We welcome everyone regardless of gender, sexuality, size, age, ethnicity or ability. Our gyms are friendly, supportive and judgement free spaces where everybody can come in, work out and leave feeling good.</p><a href="aboutus.html">Read more</a>
+	<hr class="new4">
+   <h4>BRANCHES</h4>
+   <p>Malad Branch 1</p>
+    <p>Malad Branch 2</p>
+   <hr class="new4">
+   <h4>FOLLOW US ON</h4>
+  <div class="w3-xlarge w3-section">
+   <a href="https://www.facebook.com/bodylabfitness/?scmts=scwspsdd&extid=3FRazZTUEzOtAvrT" class="fa fa-facebook-official w3-hover-opacity"></a>
+   <a href="https://www.instagram.com/bodylabfitness15/?igshid=340xtq4wsa3y" class="fa fa-instagram w3-hover-opacity"></a>
+  </div>
+
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+</body>
+</html>
